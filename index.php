@@ -8,6 +8,9 @@
   if(!isset($_POST['_action_']))  { $_POST['_action_'] = FALSE;  }
 
   if (!isset($menu)) { $menu = 1; }
+
+  if(isset($_GET['menu'])) { $menu   = (int)$_GET['menu']; }
+  if(isset($_GET['action'])) { $action   = (int)$_GET['action']; }
 ?>
 
 <!DOCTYPE html>
