@@ -1,0 +1,73 @@
+
+
+header {
+  height: 40vh;
+}
+
+
+main {
+  padding-top: 60px;
+}
+
+
+.map {
+  width: 100%;
+}
+
+form {
+  margin: 60px 0 0;
+}
+
+label {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+input[type=text],
+input[type=email] {
+  display: block;
+  width: 60%;
+  padding: 15px 15px;
+  margin: 10px 0 30px;
+  border: none;
+  border: 2px solid #eee;
+  font-size: 1rem;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--accent-col);
+}
+
+select {
+  display: block;
+  padding: 10px 15px;
+  margin: 10px 0 30px;
+  font-size: 1rem;
+  border: 2px solid #eee;
+}
+
+select:focus {
+  outline: none;
+}
+
+input[type=submit] {
+  margin-top: 40px;
+  padding: 10px 25px;
+  background-color: var(--accent-col);
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:focus {
+  outline: none;
+}
+
+@media only screen and (max-width: 992px) {
+  header {
+    height: 70vh;
+  }
+}
