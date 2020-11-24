@@ -125,7 +125,7 @@
 
     <p>Copyright &copy; Toni Stokić <?php echo date("Y"); ?></p>
 
-    <a href="#" class="github-link">
+    <a href="https://github.com/DashNothing/NTPWS" target="_blank" class="github-link">
       <img src="img/github-logo.svg" alt="github link">
     </a>
 
