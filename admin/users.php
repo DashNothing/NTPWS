@@ -19,7 +19,7 @@
       include("userform.php");
 
       print '<p><a href="index.php?menu=' . $menu . '&amp;action=' . $action . '">Back</a></p>';
-  } else {
+  } else if ($_SESSION["user"]["role"] == "admin") {
     print '
       <h2>Users</h2>
       <table>
@@ -63,6 +63,8 @@
       </tbody>
       </table>
       ';
+  } else {
+    print '<p style="margin-top: 30px">As an <strong>' . $_SESSION["user"]["role"] . '</strong>, you dont have the privileges to administrate users</p>';
   }
 ?>
 
