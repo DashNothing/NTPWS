@@ -113,3 +113,22 @@ input[type=submit]:focus {
   cursor: pointer;
   text-decoration: none;
 }
+
+.back {
+  display: inline-block;
+  color: var(--accent-col);
+  margin-top: 40px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+
+
+/*------POST OVERVIEW------*/
+
+.post-overview img {
+  object-fit: cover;
+  width: 100%;
+  height: 400px;
+  margin: 20px 0 70px;
+}

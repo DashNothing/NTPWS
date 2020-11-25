@@ -51,6 +51,9 @@
       else if ($_GET["menu"] == 9) {
         print '<link rel="stylesheet" href="style/admin.css">';
       }
+      else if ($_GET["menu"] == 10) {
+        print '<link rel="stylesheet" href="style/article.css">';
+      }
     }
   ?>
 
@@ -118,6 +121,11 @@
       # Admin
       else if ($_GET["menu"] == 9) {
         include("admin.php");
+      }
+
+      # Article
+      else if ($_GET["menu"] == 10) {
+        include("article.php");
       }
   
     ?>

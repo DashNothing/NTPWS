@@ -5,7 +5,7 @@
   $row = @mysqli_fetch_array($result);
   $checked_archive = false;
 
-  print '<h2>Edit news</h2>';
+  print '<h2>Edit post</h2>';
 
   print '
 <form action="" name="registration_form" method="POST" enctype="multipart/form-data">
@@ -19,7 +19,7 @@
   <textarea rows=6 id="description" name="description" value="" placeholder="Description..."
     required>' . $row['description'] . '</textarea>
 
-  <label for="picture">Picture</label>
+  <label for="picture">Pictures</label>
   <input type="file" id="picture" name="picture[]" multiple accept="image/x-png,image/gif,image/jpeg" />
   
   <label for="archive">Archive</label>

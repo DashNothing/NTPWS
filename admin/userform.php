@@ -42,7 +42,8 @@
   
   <label for="role">Role</label>
   <select name="role" id="role" selected="' . $row["role"] . '">
-    <option value="user">User</option>
+    <option value="">Unassigned</option>
+    <option value="user" selected>User</option>
     <option value="editor">Editor</option>
     <option value="admin">Admin</option>
   </select>

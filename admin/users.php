@@ -32,7 +32,7 @@
   if ($_SESSION["user"]["role"] == "admin") {
     if (isset($_GET['edit']) && $_GET['edit'] != '') {
       include("userform.php");
-      print '<p><a href="index.php?menu=' . $menu . '&amp;action=' . $action . '">Back</a></p>';
+      print '<p><a class="back" href="index.php?menu=' . $menu . '&amp;action=' . $action . '">Back</a></p>';
     } else {
       print '
         <h2>Users</h2>
