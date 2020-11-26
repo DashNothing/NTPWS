@@ -110,4 +110,5 @@ function showDetails(foodItem) {
   detailsList.appendChild(fiberP);
 
   detailsHeading.innerHTML = foodItem.description;
+  detailsHint.style.display = "none";
 }

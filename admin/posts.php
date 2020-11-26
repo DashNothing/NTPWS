@@ -169,7 +169,7 @@
     include("posteditform.php");
 
     print '<p><a class="back" href="index.php?menu='.$menu.'&amp;action='.$action.'">Back</a></p>';
-  } else {
+  } else if ($_SESSION["user"]["role"] == "admin" || $_SESSION["user"]["role"] == "editor") {
     print '
       <h2>Posts</h2>
 
@@ -223,5 +223,7 @@
 
       <a href="index.php?menu=' . $menu . '&amp;action=' . $action . '&amp;add=true" class="primary-btn">Add a post</a>
     ';
+  } else if ($_SESSION["user"]["role"] == "user") {
+    print '<a href="index.php?menu=' . $menu . '&amp;action=' . $action . '&amp;add=true" class="primary-btn">Add a post</a>';
   }
 ?>

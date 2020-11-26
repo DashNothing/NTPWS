@@ -4,6 +4,7 @@
   <?php
     # Get all posts
     $query  = "SELECT * FROM post";
+    $query .= ' WHERE archive="N"';
     $query .= " ORDER BY date DESC";
     $result = @mysqli_query($MySQL, $query);
     while ($row = @mysqli_fetch_array($result)) {
