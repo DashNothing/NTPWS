@@ -45,6 +45,15 @@
   ?>
 </div>
 
+<div class="photo-overlay">
+    <div class="photo-container">
+      <img src="" alt="article photo">
+      <button class="close">
+        <img src="img/icons/close.svg" alt="close" />
+      </button>
+    </div>
+  </div>
+
 <a href="index.php?menu=2" class="back">Back to news</a>
 
 <script src="js/view-image.js"></script>

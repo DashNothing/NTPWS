@@ -28,11 +28,13 @@ main {
 
 
 @media only screen and (max-width: 992px) {
-  .gallery {
-    grid-template-columns: 1fr;
-  }
-
   header {
     height: 70vh;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .gallery {
+    grid-template-columns: 1fr;
   }
 }

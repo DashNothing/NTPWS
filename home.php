@@ -1,4 +1,4 @@
-<h1>Main Part of the Page</h1>
+<h1>Your home to everything fitness</h1>
 
 <figure>
   <img src="img/gym.jpg" alt="house" class="main-img">

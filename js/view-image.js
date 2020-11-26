@@ -3,8 +3,13 @@ const photo = document.querySelector(".photo-container img");
 
 const close = document.querySelector(".close");
 
+const mainPhoto = document.querySelector(".main-image");
 const gallleryPhotos = document.querySelectorAll(".photo-gallery img");
 
+
+mainPhoto.addEventListener("click", () => {
+  showPhotoOverlay(mainPhoto.src);
+});
 
 gallleryPhotos.forEach(photo => {
   photo.addEventListener("click", () => {
